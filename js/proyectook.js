@@ -78,17 +78,17 @@ function desmarcar() {
 $("#botonCotizar").click(aparecerTotal);
 
 var precios = {
-    acrilicro: 1000,
-    micro: 800,
+    acrilicro: 1200,
+    micro: 1000,
     lapiz: 700,
-    bastidor: 1000,
-    lienzo: 800,
-    hoja: 600,
-    medida1: 300,
-    medida2: 400,
-    medida3: 500,
-    medida4: 600,
-    medida5: 800,
+    bastidor: 1500,
+    lienzo: 1200,
+    hoja: 1000,
+    medida1: 500,
+    medida2: 700,
+    medida3: 1000,
+    medida4: 1500,
+    medida5: 2200,
 
 }
 
@@ -113,7 +113,7 @@ function aparecerTotal() {
     var totalCotizacion = precioAcrilico + precioBase + precioMedida;
 
 
-    $("#total").text(" Su total es $" + totalCotizacion)
+    $("#total").text("El total de tu cuadro es $" + totalCotizacion)
 }
 
 
@@ -123,7 +123,7 @@ function onCostoTecnicaChange() {
     var tecnicaSeleccionada = $("#tecnica").val();
     var precioAcrilico = precios[tecnicaSeleccionada]
 
-    $("#costoTecnica").text(precioAcrilico);
+    $("#costoTecnica").text("$" + precioAcrilico);
 }
 
 
@@ -133,16 +133,16 @@ function onCostoBaseChange() {
     var baseSeleccionada = $("#base").val();
     var precioBase = precios[baseSeleccionada]
 
-    $("#costoBase").text(precioBase);
+    $("#costoBase").text("$" + precioBase);
 }
 
 $("#medida").change(onCostoMedidaChange);
 
 function onCostoMedidaChange() {
     var medidaSeleccionada = $("#medida").val();
-    var precioBase = precios[medidaSeleccionada]
+    var precioMedida = precios[medidaSeleccionada]
 
-    $("#costoMedida").text(precioBase);
+    $("#costoMedida").text("$" + precioMedida);
 }
 
 

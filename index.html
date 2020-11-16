@@ -22,7 +22,7 @@
 
             <header class="contenedor1 col-lg col-md d-flex align-items-center d-flex justify-content-center m-3 p-2">
                 <img src="multimedia/logo.jpg" class="img-fluid logo col-lg-2 col-md-2" alt="">
-                <h1 class="d-flex align-items-center d-flex justify-content-center titulo1 h1 font-weight-bold col-lg-4 col-md-4 pr-0">Soy ROMI</h1>
+                <h1 class="d-flex align-items-center d-flex justify-content-center titulo1 h1 font-weight-bold col-lg-4 col-md-4 pr-0">Cuadros a pedido</h1>
 
                 <nav class="col-lg-6 col-md-6 d-flex align-items-center d-flex justify-content-end">
                     <ul class="col">
@@ -142,78 +142,85 @@
 
                 <p class="m-2 d-flex justify-content-start col-lg-8 uruRomi h5 ">UN REGALO ÚNICO PARA VOS O PARA QUIEN QUIERAS</p>
             </div>
-            <div class="mt-2 mb-3 ml-0 pl-0 parrafo2 col d-flex align-items-center d-flex justify-content-start">
-                <p class="font-weight-bold h5">Registrá tus datos para obtener beneficios en tu próximo pedido</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <input class=" mb-3" type="text" id="nombre" placeholder="Ingresá tu nombre">
-                </div>
-                <div class="col-lg-12">
-                    <input class=" mb-3" type="text" id="instagram" placeholder="Ingresá tu @instagram">
-                </div>
-                <div class="col-lg-12">
-                    <p>
-                        <input type="button" value="Quiero recibir un descuento en mi próxima compra" id="calculo" />
-                    </p>
 
-                    <h3 class="mt-4 mb-4 saludo" id="resultadoSaludo"></h3>
+            <div class="contenedorCotizacion">
+
+                <div class="mt-4 mb-3 ml-0 pl-0 parrafo2 col d-flex align-items-center d-flex justify-content-center">
+                    <p class="mt-3 font-weight-bold h5">Registrá tus datos para obtener beneficios en tu próximo pedido</p>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-center col-lg-12">
+                        <input class=" mb-3" type="text" id="nombre" placeholder="Ingresá tu nombre">
+                    </div>
+                    <div class="d-flex justify-content-center col-lg-12">
+                        <input class=" mb-3" type="text" id="instagram" placeholder="Ingresá tu @instagram">
+                    </div>
+                    <div class="d-flex justify-content-center col-lg-12">
+                        <p>
+                            <input class="mb-3 d-flex justify-content-center" type="button" value="Quiero recibir mi descuento" id="calculo" />
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center col-lg-12">
+                        <h3 class="d-flex justify-content-center mt-2 mb-4 saludo" id="resultadoSaludo"></h3>
+
+                    </div>
 
                 </div>
-
-            </div>
-            <form>
-                <div class="col-lg-4 form-group col ">
-                    <label for="inputState ">Técnica</label>
-                    <select id="tecnica" class="base form-control ">
-                    <option id="acrilicro" value="acrilicro" selected>Acrílicos</option>
+                <form class="ml-3 mr-3 row">
+                    <div class="col-lg-4 form-group col ">
+                        <label for="inputState ">Técnica</label>
+                        <select id="tecnica" class="base form-control ">
+                        <option selected >elegí una opción</option>
+                    <option id="acrilicro" value="acrilicro" >Acrílicos</option>
                     <option id="micro" value= "micro">Microfibras</option>
                     <option id="lapiz" value="lapiz">Lápices</option>
                 </select>
-                    <div class="mt-2" id="costoTecnica">
+                        <div class="mt-2" id="costoTecnica">
 
+                        </div>
                     </div>
-                </div>
 
 
 
-                <div class="col-lg-4 form-group col">
-                    <label for="inputState">Base</label>
-                    <select id="base" class="base form-control">
-                    <option id="bastidor" value="bastidor" selected>Bastidor de tela</option>
+                    <div class="col-lg-4 form-group col">
+                        <label for="inputState">Base</label>
+                        <select id="base" class="base form-control">
+                        <option selected >elegí una opción</option>
+                    <option id="bastidor" value="bastidor" >Bastidor de tela</option>
                     <option id="lienzo" value="lienzo">Lienzo</option>
                     <option id="hoja" value="hoja">Hoja A4 en marco de vidrio</option>
                 </select>
-                    <div class="mt-2" id="costoBase">
+                        <div class="mt-2" id="costoBase">
 
+                        </div>
                     </div>
-                </div>
 
 
-                <div class=" col-lg-4 form-group col">
-                    <label for="inputState">Medida</label>
-                    <select id="medida" class="medida form-control">
-                    <option id="medida1" value="medida1" selected>18 x 24</option>
+                    <div class=" col-lg-4 form-group col">
+                        <label for="inputState">Medida</label>
+                        <select id="medida" class="medida form-control">
+                        <option selected >elegí una opción</option>
+                    <option id="medida1" value="medida1" >18 x 24</option>
                     <option id="medida2" value="medida2">24 x 30</option>
                     <option id="medida3" value="medida3">30 x 40</option>
                     <option id="medida4" value="medida4">40 x 60</option>
                     <option id="medida5" value="medida5">50 x 60</option>
                     </select>
-                    <div class="mt-2" id="costoMedida">
+                        <div class="mt-2" id="costoMedida">
+
+                        </div>
 
                     </div>
 
-                </div>
 
-
-                <button type="button" class="pl-4 pr-4 boton btn btn-outline-secondary m-4" id="botonCotizar">COTIZAR
+                    <button type="button" class="pl-4 pr-4 boton btn btn-outline-secondary m-4" id="botonCotizar">COTIZAR
             </button>
 
-                <div class="mt-4 mb-4 m-3 saludo " id="total" style="display: none;">
-                    <h3 class="font-weight-bold">Total $</h3>
-                </div>
-            </form>
-
+                    <div class="mt-4 mb-4 m-3 saludo " id="total" style="display: none;">
+                        <h3 class="font-weight-bold">Total $</h3>
+                    </div>
+                </form>
+            </div>
 
             <div id="seccionRomina" class="contenedorSeguime col-lg d-flex align-items-center d-flex justify-content-center mt-5 p-0">
 
@@ -265,8 +272,8 @@
             </div>
             <div class="d-flex justify-content-center  form-row">
                 <div class="col-md-6 form-group">
-                    <label for="exampleFormControlTextarea1">Comentarios</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1">Pedido</label>
+                    <textarea class="form-control" placeholder="No olvides colocar técnica, base y medidas elegidas!" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </div>
             <div class="mb-5 d-flex justify-content-center  form-row">

@@ -5,7 +5,7 @@ body {
 .titulo1 {
     color: #3c6e71;
     font-family: 'Poiret One', cursive;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
@@ -147,12 +147,16 @@ ul li {
     padding: 4px;
 }
 
+.contenedorCotizacion {
+    background-color: #bee3db;
+}
+
 #costoTecnica {
     font-family: 'Poiret One', cursive;
     letter-spacing: 4px;
     font-size: 20px;
     font-weight: bold;
-    color: #353535;
+    color: #479483;
 }
 
 #costoBase {
@@ -160,7 +164,7 @@ ul li {
     letter-spacing: 4px;
     font-size: 20px;
     font-weight: bold;
-    color: #353535;
+    color: #479483;
 }
 
 #costoMedida {
@@ -168,7 +172,7 @@ ul li {
     letter-spacing: 4px;
     font-size: 20px;
     font-weight: bold;
-    color: #353535;
+    color: #479483;
 }
 
 #total {
